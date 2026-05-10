@@ -18,10 +18,13 @@
 <body>
     <div>
         <!--Cabeçalho do site-->
-        <header id="topo">                        <h1>Brenda Melo <hr> </h1>
+        <header id="topo">
+            <h1>Brenda Marcela de Melo
+                <hr>
+            </h1>
             <!--Menu de navegação do site-->
             <nav>
-                <a class="btn btn-primary" href="#Sobre mim" role="button">Sobre mim</a>
+                <a class="btn btn-primary" href="#Sobre" role="button">Sobre mim</a>
                 <a class="btn btn-primary" href="#Projetos" role="button">Projetos</a>
                 <a class="btn btn-primary" href="#Contato" role="button">Contato</a>
                 <a class="btn btn-primary" href="#Skills" role="button">Skills</a>
@@ -38,9 +41,10 @@
         </section>
         <!--Conteúdo principal do site-->
         <main>
-            <section>
-                <h2 id="Sobre mim">Sobre mim</h2>
-                <p>Olá, meu nome é Brenda Melo e sou uma estudante de desenvolvimento Front-End pelo programa Entra21
+            <section class="sobre">
+                <h2 id="Sobre">Sobre mim</h2>
+                <p id="descricao-sobre">
+                    Olá, meu nome é Brenda Melo e sou uma estudante de desenvolvimento Front-End pelo programa Entra21
                     oferecido pela Blusoft em parceria com o SENAI. Atualmente estou em transição de carreira e
                     descobrindo um novo universo através da tecnologia. Durante minha última experiência, desenvolvi
                     habilidades com organização, comunicação e resolução de demandas no dia a dia, competências que hoje
@@ -48,44 +52,79 @@
                     constantemente e criando projetos prtáticos enquanto evoluo meus conhecimentos. Esta é uma excelente
                     oportunidade para aprender. </p>
             </section>
-            <section>
-                <h2 id="Projetos">Projetos</h2>
-                <p>Estes são alguns dos projetos em que trabalhei:</p>
-                <ul>
-                    <li>Otto LegoLand</li>
-                    <p>Landing page desenvolvida para praticar HTML e CSS, com foco na estruturação da página, navegação
-                        e estilização responsiva.</p>
-                    <a href="https://berenda-m.github.io/otto-land/">Veja Aqui</a>
-                </ul>
-            </section>
-            <section>
-                <h2 id="Skills">Skills</h2>
-                <p>Minhas habilidades incluem:</p>
-                <ul>
-                    <li>HTML <i class="fa-brands fa-html5"></i></li>
-                    <li>CSS <i class="fa-brands fa-css3-alt"></i></li>
-                    <li>JavaScript <i class="fa-brands fa-js"></i></li>
-                    <li>GIT <i class="fa-brands fa-git-alt"></i></li>
-                </ul>
-            </section>
-            <section id="Contato">
-                <h2>Contatos</h2>
-                <a href="mailto:brendasilvam7@gmail.com">brendasilvam7@gmail.com <i class="fa-solid fa-envelope"></i></a>
-                <a href="https://github.com/Berenda-m" target="_blank">GitHub <i class="fa-brands fa-github"></i></a>
-            </section>
+            <div class="separador">
+                <img src="../img/divisoriadesessoes.png" alt="">
+            </div>
+            <section class="cards-grid">
+                <section id="Projetos">
+
+                    <h2>Projetos</h2>
+
+                    <div class="cards-grid">
+
+                        <div class="card">
+
+                            <i class="fa-solid fa-laptop-code"></i>
+
+                            <h3>Otto LegoLand</h3>
+
+                            <p>
+                                Landing page desenvolvida para praticar HTML e CSS,
+                                com foco em estruturação e responsividade.
+                            </p>
+
+                            <a href="https://berenda-m.github.io/otto-land/" target="_blank">
+                                Ver projeto
+                            </a>
+
+                        </div>
+
+                        <div class="card">
+
+                            <i class="fa-solid fa-code"></i>
+
+                            <h3>Próximos Projetos</h3>
+
+                            <p>
+                                Em breve novos projetos serão adicionados conforme
+                                avanço nos estudos de Front-End.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+    </div>
+    </section>
+    <section>
+        <h2 id="Skills">Skills</h2>
+        <p>Minhas habilidades incluem:</p>
+        <ul>
+            <li>HTML <i class="fa-brands fa-html5"></i></li>
+            <li>CSS <i class="fa-brands fa-css3-alt"></i></li>
+            <li>JavaScript <i class="fa-brands fa-js"></i></li>
+            <li>GIT <i class="fa-brands fa-git-alt"></i></li>
+        </ul>
+    </section>
+    <section id="Contato">
+        <h2>Contatos</h2>
+        <a href="mailto:brendasilvam7@gmail.com">brendasilvam7@gmail.com <i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/Berenda-m" target="_blank">GitHub <i class="fa-brands fa-github"></i></a>
+    </section>
 
 
-        </main>
+    </main>
 
-        <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
-        <!-- Option 2: Separate Popper and Bootstrap JS -->
-        <!--
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->

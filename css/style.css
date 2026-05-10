@@ -36,7 +36,14 @@ header {
     background-position: center top;
     background-repeat: no-repeat;
 }
-
+/*linha abaixo do título*/
+hr {
+    width: 120%;
+    height: 3px;
+    border: none;
+    margin: 10px;
+    margin-left: 0;
+}
 /*Menu de navegação do site*/
 nav a {
     margin-left: 15px;
@@ -114,3 +121,70 @@ nav a {
     font-size: 0.8rem;
     color: var(--cor-texto-claro);
 }
+/*Seção sobre mim*/
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 40px;
+    font-weight: 350;
+}
+#Sobre {
+    font-size: 2rem;
+    color: var(--cor-primaria);
+    margin: 30px;
+}
+#descricao-sobre {
+    max-width: 850px;
+    width: 100%;
+    font-size: 1.1rem;
+    color: var(--cor-texto);
+    line-height: 1.8;
+    margin: 0;
+}
+/*Separador entre as seções*/
+.separador {
+    text-align: center;
+    margin: 8px 0;
+}
+
+.separador img {
+    width: 250px;
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Seção de projetos*/
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 220px;
+    background: var(--cor-fundo);
+    opacity: 95%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
