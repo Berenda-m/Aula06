@@ -20,6 +20,14 @@
     padding: 0;
 }
 
+/*Estilos globais do site*/
+body {
+    font-family: var(--fonte);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.8;
+}
+
 /*cabeçalho do site*/
 header {
     background-color: var(--cor-primaria);
@@ -36,6 +44,7 @@ header {
     background-position: center top;
     background-repeat: no-repeat;
 }
+
 /*linha abaixo do título*/
 hr {
     width: 120%;
@@ -44,6 +53,7 @@ hr {
     margin: 10px;
     margin-left: 0;
 }
+
 /*Menu de navegação do site*/
 nav a {
     margin-left: 15px;
@@ -73,9 +83,10 @@ nav a {
 .btn-primary:focus,
 .btn-primary:active,
 .btn:focus,
-.btn:active {
+.btn:active .btn-primary:hover {
     box-shadow: none !important;
     outline: none !important;
+    background-color: var(--cor-destaque) !important;
 }
 
 /*apresentação principal do site*/
@@ -121,6 +132,7 @@ nav a {
     font-size: 0.8rem;
     color: var(--cor-texto-claro);
 }
+
 /*Seção sobre mim*/
 .sobre {
     display: flex;
@@ -131,11 +143,13 @@ nav a {
     gap: 40px;
     font-weight: 350;
 }
+
 #Sobre {
     font-size: 2rem;
     color: var(--cor-primaria);
     margin: 30px;
 }
+
 #descricao-sobre {
     max-width: 850px;
     width: 100%;
@@ -144,6 +158,7 @@ nav a {
     line-height: 1.8;
     margin: 0;
 }
+
 /*Separador entre as seções*/
 .separador {
     text-align: center;
@@ -155,36 +170,80 @@ nav a {
     opacity: 0.7;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Seção de projetos*/
+.projetos {
+    font-size: 2rem;
+    color: var(--cor-primaria);
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .cards-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     flex: 1 1 220px;
-    background: var(--cor-fundo);
-    opacity: 95%;
+    /* cresce | encolhe | base 220px */
+    max-width: 400px;
+    background: var(--cor-superficie);
+    border-radius: var(--raio);
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: var(--sombra);
+    text-align: center;
 }
-
+/*Imagem do projeto*/
+.print-projeto {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 90%;
+    margin-top: 20px;
+    filter: grayscale(90%);
+    transition: 0.4s ease;
+    opacity: 0.85;
+    height: 100%;
+    object-fit: cover;
+}
+/*H3 do projeto H3 do próximos projetos*/
+#titulo {
+    margin-top: 2px;
+    color: var(--cor-primaria);
+    font-size: 1.5rem;
+    text-align: center;
+    min-height: 40px;
+}
+/*icone card sessão projetos*/
+.card-icone {
+    text-align: center;
+    font-size: 2.0rem;
+    color: var(--cor-destaque);
+    margin-bottom: 10px;
+    margin: 1px;
+}
+.card p {
+    color: var(--cor-texto);
+    font-size: 1rem;
+    line-height: 1.2;
+    margin: 0;
+}
+/*botão do projeto*/
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    border-radius: var(--raio);
+    transition: background-color 0.3s ease;
+}
