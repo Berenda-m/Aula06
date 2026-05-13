@@ -201,6 +201,13 @@ nav a {
     padding: 20px;
     box-shadow: var(--sombra);
     text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+    background-color: #d7dbc9;
+}
+.card:hover {
+    transform: translateY(-5px);
 }
 /*Imagem do projeto*/
 .print-projeto {
