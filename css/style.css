@@ -206,9 +206,11 @@ nav a {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
     background-color: #d7dbc9;
 }
+
 .card:hover {
     transform: translateY(-5px);
 }
+
 /*Imagem do projeto*/
 .print-projeto {
     max-width: 400px;
@@ -221,6 +223,7 @@ nav a {
     height: 100%;
     object-fit: cover;
 }
+
 /*H3 do projeto H3 do próximos projetos*/
 #titulo {
     margin-top: 2px;
@@ -229,6 +232,7 @@ nav a {
     text-align: center;
     min-height: 40px;
 }
+
 /*icone card sessão projetos*/
 .card-icone {
     text-align: center;
@@ -237,12 +241,14 @@ nav a {
     margin-bottom: 10px;
     margin: 1px;
 }
+
 .card p {
     color: var(--cor-texto);
     font-size: 1rem;
     line-height: 1.2;
     margin: 0;
 }
+
 /*botão do projeto*/
 .card a {
     display: inline-block;
@@ -253,4 +259,34 @@ nav a {
     text-decoration: none;
     border-radius: var(--raio);
     transition: background-color 0.3s ease;
+}
+
+/*skills*/
+.layout-2col {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.layout-2col .conteudo {
+    flex: 2;
+}
+
+.layout-2col .lateral {
+    flex: 1;
+}
+
+.lateral {
+    border-radius: 90%;
+    margin-top: 20px;
+    filter: grayscale(90%);
+    transition: 0.4s ease;
+    opacity: 0.85;
+    object-fit: cover;
+    display: flex;
+}
+.conteudo p {
+    color: var(--cor-texto);
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
