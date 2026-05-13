@@ -172,7 +172,7 @@ nav a {
 
 /*Seção de projetos*/
 .projetos {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--cor-primaria);
     margin: 30px;
     display: flex;
@@ -228,7 +228,7 @@ nav a {
 #titulo {
     margin-top: 2px;
     color: var(--cor-primaria);
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     text-align: center;
     min-height: 40px;
 }
@@ -264,8 +264,34 @@ nav a {
 /*skills*/
 .layout-2col {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.layout-2col .conteudo {
+    flex: 2;
+}
+
+.layout-2col .lateral {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.lateral {
+    margin-top: 10px;
+    transition: 0.4s ease;
+    opacity: 0.95;
+    display: flex;
+}
+
+.layout-2col {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 .layout-2col .conteudo {
@@ -278,15 +304,123 @@ nav a {
 
 .lateral {
     border-radius: 90%;
-    margin-top: 20px;
-    filter: grayscale(90%);
+    margin-top: 10px;
+    filter: grayscale(10%);
     transition: 0.4s ease;
-    opacity: 0.85;
+    opacity: 0.95;
     object-fit: cover;
     display: flex;
 }
+
+/*Imagem da lateral da sessão skills*/
+.lateral img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: grayscale(20%);
+    opacity: 0.95;
+    transition: 0.4s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.lateral img:hover {
+    transform: scale(1.03);
+    filter: grayscale(0%);
+}
 .conteudo p {
     color: var(--cor-texto);
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     line-height: 1.8;
+    padding-left: 20px;
+}
+.lista {
+    list-style: none;
+    padding-left: 20px;
+}
+.lista li {
+    margin-bottom: 15px;
+
+    font-size: 1.1rem;
+}
+.lista li::before {
+    content: "✦ ";
+
+    color: var(--cor-destaque);
+}
+/*H2 do título da sessão skills*/
+h2#titulo {
+    margin-top: 2px;
+    color: var(--cor-primaria);
+    font-size: 3rem;
+    text-align: center;
+    min-height: 40px;
+}
+/*Rodapé do site*/
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+footer {
+    background-color: var(--cor-texto);
+
+    color: var(--cor-texto-claro);
+
+    padding: 50px 40px;
+
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+.footer-logo,
+.footer-links,
+.footer-contato {
+    flex: 1;
+}
+
+.footer-links {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.footer-links a,
+.footer-contato a {
+    color: var(--cor-texto-claro);
+
+    text-decoration: none;
+
+    margin-bottom: 10px;
+}
+
+.footer-links a:hover,
+.footer-contato a:hover {
+    color: var(--cor-superficie);
+}
+
+.copyright {
+    text-align: center;
+
+    margin-top: 30px;
+
+    opacity: 0.7;
 }
