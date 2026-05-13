@@ -448,5 +448,16 @@ footer {
 
         align-items: center;
     }
+    .lista {
+    padding-left: 0;
+
+    text-align: center;
+}
+
+.lista li {
+    font-size: 1rem;
+
+    margin-bottom: 10px;
+}
 
 }
